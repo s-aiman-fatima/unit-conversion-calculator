@@ -1,0 +1,79 @@
+/* General Styling */
+section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width for mobile */
+    max-width: 400px; /* Max width on larger screens */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 18px;
+    text-align: center; /* Center header */
+}
+
+input, select, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px; /* Adjust font size for readability */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 480px) {
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 16px; /* Reduce font size on mobile */
+    }
+
+    input, select, button {
+        font-size: 14px; /* Ensure all text is readable on smaller screens */
+        padding: 8px;
+    }
+
+    button {
+        font-size: 16px; /* Button font size adjustment */
+        padding: 12px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    section {
+        max-width: 80%; /* Use more of the screen width for tablets */
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input, select, button {
+        font-size: 15px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}

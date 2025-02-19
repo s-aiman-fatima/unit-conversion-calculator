@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversion Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<!-- Existing Unit Conversion Section -->
+<section id="unit-conversion">
+    <h2>Unit Conversion Calculator</h2>
+    <input type="number" id="inputValue" placeholder="Enter value">
+    <select id="conversionType">
+        <option value="gallonsToMG">Gallons ➝ Million Gallons</option>
+        <option value="mgToGallons">Million Gallons ➝ Gallons</option>
+        <option value="ftToGallons">Cubic Feet ➝ Gallons</option>
+        <option value="gallonsToFt">Gallons ➝ Cubic Feet</option>
+        <option value="gallonsToLbs">Gallons ➝ Pounds</option>
+        <option value="lbsToGallons">Pounds ➝ Gallons</option>
+        <option value="gpmToMgd">GPM ➝ MGD</option>
+        <option value="mgdToGpm">MGD ➝ GPM</option>
+        <option value="gpmToGph">GPM ➝ GPH</option>
+        <option value="gphToGpm">GPH ➝ GPM</option>
+        <option value="gpmToGps">GPM ➝ GPS</option>
+        <option value="gpsToGpm">GPS ➝ GPM</option>
+        <option value="gphToGps">GPH ➝ GPS</option>
+        <option value="gpsToGph">GPS ➝ GPH</option>
+    </select>
+    <button onclick="convertUnit()">Convert</button>
+    <p>Result: <span id="conversionResult"></span></p>
+</section>
+
+<!-- New Lbs/Day Calculation Section -->
+<section id="lbs-calculation">
+    <h2>Lbs/Day Calculation</h2>
+    <label for="concentration">Concentration (mg/L):</label>
+    <input type="number" id="concentration" placeholder="Enter concentration">
+    
+    <label for="flow">Flow (MGD):</label>
+    <input type="number" id="flow" placeholder="Enter flow">
+    
+    <button onclick="calculateLbsPerDay()">Calculate</button>
+    
+    <p>Result: <span id="lbsResult"></span> lbs/day</p>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
